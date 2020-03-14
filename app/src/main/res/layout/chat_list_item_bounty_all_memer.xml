@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:background="@color/whiteColor"
+    android:paddingLeft="@dimen/screen_left"
+    android:paddingRight="@dimen/screen_right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/imageIv"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/textTv"
+            style="@style/deepFont_14"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="avatarIv" />
+
+        <LinearLayout
+            android:id="@+id/managerLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/jieguTv"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tag_bk_5"
+                android:gravity="center"
+                android:text="解雇"
+                android:textColor="@color/whiteColor"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/guyongTv"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:background="@drawable/primary_5_bk"
+                android:gravity="center"
+                android:text="雇佣"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/whiteColor"
+                android:textSize="12dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/jiesuanTv"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:background="@drawable/b2_5_bk"
+                android:gravity="center"
+                android:text="结算"
+                android:textColor="@color/whiteColor"
+                android:textSize="12dp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/stateTv"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:background="@drawable/b2_5_bk"
+                android:gravity="center"
+                android:text="已结算"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/whiteColor"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/shensuTv"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tag_bk_5"
+                android:gravity="center"
+                android:text="申诉"
+                android:textColor="@color/whiteColor"
+                android:textSize="12dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_marginLeft="@dimen/screen_left"
+        android:layout_marginRight="@dimen/screen_right"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/spiteColor" />
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/tag_bk_18" android:state_selected="true" />
+    <item android:drawable="@drawable/e0e0_bk_18" android:state_selected="false" />
+    <item android:drawable="@drawable/e0e0_bk_18" />
+</selector>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/white_5_bk"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/screen_left"
+                android:paddingRight="@dimen/screen_right">
+
+                <TextView
+                    style="@style/deepFont_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出让人: " />
+
+                <TextView
+                    android:id="@+id/nameTv"
+                    style="@style/deepFont_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Orland Hane" />
+
+                <TextView
+                    android:id="@+id/chartTv"
+                    android:layout_width="60dp"
+                    android:layout_height="23dp"
+                    android:background="@drawable/primary_10_bk"
+                    android:gravity="center"
+                    android:text="洽谈"
+                    android:textColor="@color/whiteColor"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/buyPriceTv"
+                style="@style/deepFont_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_left"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/screen_right"
+                android:singleLine="true"
+                android:text="买入蝌蚪币单价：¥1100.00元" />
+
+            <TextView
+                android:id="@+id/buyNumberTv"
+                style="@style/deepFont_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_left"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/screen_right"
+                android:singleLine="true"
+                android:text="买入蝌蚪币数量：5.026元" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/screen_left"
+                android:paddingRight="@dimen/screen_right">
+
+                <TextView
+                    style="@style/deepFont_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="合计应付金额：" />
+
+                <TextView
+                    android:id="@+id/allPriceTv"
+                    style="@style/deepFont_14"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="Orland Hane"
+                    android:textColor="@color/tagColor" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/spiteColor" />
+
+
+            <TextView
+                android:id="@+id/descriptionTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_left"
+                android:layout_marginRight="@dimen/screen_right"
+                android:layout_marginBottom="@dimen/dimen_15"
+                android:lineSpacingMultiplier="1.2"
+                android:text=""
+                android:textSize="@dimen/dimen_14" />
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/deepFont_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/screen_left"
+                    android:layout_marginRight="@dimen/screen_right"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="风险提示："
+                    android:textColor="@color/tagColor" />
+
+                <TextView
+                    style="@style/deepFont_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/screen_left"
+                    android:layout_marginRight="@dimen/screen_right"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="                       蝌蚪币是本平台唯一分红凭证，其数量多少直接影响到每日分红收益。蝌蚪币总数500万枚，数量有限，资源稀缺，交易需谨慎。" />
+
+            </FrameLayout>
+
+            <TextView
+                style="@style/deepFont_14"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginLeft="@dimen/screen_left"
+                android:layout_marginRight="@dimen/screen_right"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.2"
+                android:text="蝌蚪币价格有涨有跌，市场有风险，交易需谨慎"
+                android:textColor="@color/tagColor"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spiteColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/cancleTv"
+                    style="@style/deepFont_14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="加入购物车" />
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/spiteColor" />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/submit_pay"
+                    style="@style/primaryFont_14"
+                    android:textColor="@color/tagColor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="加入待付款" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/spiteColor" />
+                <TextView
+                    android:id="@+id/submitTv"
+                    style="@style/primaryFont_14"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="提交订单" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

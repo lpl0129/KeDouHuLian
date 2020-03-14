@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/titleBkColor">
+
+        <TextView
+            android:id="@+id/cancleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center|left"
+            android:layout_marginLeft="8dp"
+            android:gravity="center"
+            android:padding="7.0dip"
+            android:text="取消"
+            android:textColor="@color/tintColor"
+            android:textSize="15.0dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/top_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/screen_left"
+            android:src="@drawable/fanhui_btn"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65.0dip"
+            android:layout_marginRight="65.0dip"
+            android:singleLine="true"
+            android:text="群设置"
+            android:textColor="@color/deepColor"
+            android:textSize="17.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/top_iv_right"
+            android:layout_width="45.0dip"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center|right"
+            android:padding="12.0dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/topRight"
+            android:layout_width="wrap_content"
+            android:layout_height="45.0dip"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="8.0dip"
+            android:gravity="center"
+            android:padding="7.0dip"
+            android:text="完成"
+            android:textColor="@color/primaryColor"
+            android:textSize="15.0dp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/unread_iv"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_gravity="right|center"
+            android:layout_marginTop="-9dp"
+            android:layout_marginRight="9dp"
+            android:src="@drawable/notify_bk"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:layout_gravity="bottom"
+            android:background="@color/spiteColor"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_left"
+        android:text="群名称" />
+
+
+    <com.stay.toolslibrary.widget.ClearEditText
+        android:id="@+id/noteEt"
+        style="@style/editViewStyle"
+        android:maxLength="10"
+        android:paddingLeft="@dimen/screen_left"
+        android:hint="输入群名称"
+        android:layout_height="@dimen/dimen_53"
+        android:background="@color/whiteColor" />
+
+</LinearLayout>

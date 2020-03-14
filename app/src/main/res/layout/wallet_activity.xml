@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:id="@+id/balanceLl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_62"
+        android:layout_marginTop="10dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yuerhongbao_icn" />
+
+        <TextView
+            android:id="@+id/balanceTv"
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:text="余额: 0元" />
+
+        <TextView
+            android:id="@+id/payTv"
+            style="@style/primaryFont_13"
+            android:layout_width="@dimen/dimen_57"
+            android:layout_height="@dimen/dimen_27"
+            android:background="@drawable/primary_15_line"
+            android:gravity="center"
+            android:text="充值" />
+
+        <TextView
+            android:id="@+id/cashTv"
+            style="@style/primaryFont_13"
+            android:layout_width="@dimen/dimen_57"
+            android:layout_height="@dimen/dimen_27"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@drawable/primary_15_line"
+            android:gravity="center"
+            android:text="提现" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dongjieLl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_62"
+        android:layout_marginTop="10dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dongjiezijin_icn" />
+
+        <TextView
+            android:id="@+id/dongjieTv"
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:text="冻结资金：0元" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aestListLl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_62"
+        android:layout_marginTop="10dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/zijinmingxi_btn" />
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:text="资金明细" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youjiantou_btn" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/kedouListLl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_62"
+        android:layout_marginTop="10dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <ImageView
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:src="@drawable/kedoubimingxi_icn" />
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_weight="1"
+            android:text="蝌蚪币明细" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youjiantou_btn" />
+
+    </LinearLayout>
+    <TextView
+        style="@style/deepFont_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:text="使用说明" />
+
+    <TextView
+        android:id="@+id/descriptionTv"
+        style="@style/deepFont_13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/screen_left"
+        android:layout_marginRight="@dimen/screen_right"
+        android:lineSpacingMultiplier="1.2"
+        android:text="1、余额主要用于收支现金使用，例如发布任务、广告红包、赏金猎人、蝌蚪池塘和蝌蚪币交易市场这五大板块都需要用到现金支付，还有在平台获得的现金收入，同意由余额进行出纳：
+2、保证金主要用于对发布者任务的真实可靠性保障，只有在发布任务板块需要用到，发布任务时确定；保证金帐户额度大于等于任务佣金总额 " />
+
+
+
+    <TextView
+        android:visibility="gone"
+        style="@style/deepFont_13"
+        android:textColor="#FFFB861D"
+        android:layout_marginTop="@dimen/dimen_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="充值：只对余额进行充值。
+        保证金充值是通过资金分配由余额转入；
+提现:只通过余额进行提现。
+        保证金提现，先通过资金分配到余额里，再提现；"
+        android:layout_marginLeft="@dimen/screen_left"
+        android:layout_marginRight="@dimen/screen_right"
+        android:lineSpacingMultiplier="1.2"
+   />
+
+</LinearLayout>

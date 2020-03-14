@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:background="@color/whiteColor"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <ImageView
+            android:id="@+id/topBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/fanhui_btn" />
+
+        <LinearLayout
+            style="@style/layoutViewStyle_EditBk"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sousuo_icn" />
+
+            <EditText
+                android:id="@+id/searchEt"
+                style="@style/editViewStyle"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="搜索关键字" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/searchTv"
+            style="@style/deepFont_12"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search_bt_bk"
+            android:gravity="center"
+            android:text="搜索" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ac_tv_seal_search_more_info_title"
+            style="@style/ac_search_list_view_item"
+            android:text="@string/ac_search_chatting_records"/>
+        <View
+            style="@style/ac_search_list_view_divider"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/ac_lv_more_info_list_detail_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/ac_tv_search_no_results"
+        style="@style/ac_search_no_results"/>
+</LinearLayout>

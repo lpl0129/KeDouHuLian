@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+
+    <LinearLayout
+        style="@style/layoutViewStyle"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:text="申诉内容" />
+
+        <EditText
+            android:id="@+id/complainEt"
+            style="@style/deepFont_13"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginBottom="10dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入申诉原由"
+            android:textColorHint="@color/hintColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="手机号：" />
+
+        <com.stay.toolslibrary.widget.ClearEditText
+            android:id="@+id/phoneEt"
+            style="@style/tintFont_13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入您的联系方式"
+            android:inputType="phone"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submitTv"
+        style="@style/textViewStyle_Button_Margin"
+        android:layout_marginTop="29dp"
+        android:text="立即提交" />
+</LinearLayout>

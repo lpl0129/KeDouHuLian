@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_15"
+        android:paddingTop="15dp"
+        android:paddingBottom="@dimen/dimen_15">
+
+        <ImageView
+            android:id="@+id/avatarIv"
+            android:layout_width="@dimen/dimen_60"
+            android:layout_height="@dimen/dimen_60" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/usernameTv"
+                style="@style/deepFont_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/nickerNameTv"
+                style="@style/tintFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/kedouNumTv"
+                style="@style/tintFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/cityTv"
+                style="@style/tintFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/set_remarks"
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="备注" />
+
+        <TextView
+            android:id="@+id/markTv"
+            style="@style/tintFont_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="堂博彩" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youjiantou_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sendMsgLl"
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/primaryFont_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发消息" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/addLL"
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/primaryFont_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加好友" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/delLl"
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="删除好友"
+            android:textColor="#FFFE5555" />
+    </LinearLayout>
+</LinearLayout>

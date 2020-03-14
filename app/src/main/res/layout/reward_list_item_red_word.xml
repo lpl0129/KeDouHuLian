@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:id="@+id/text"
+        android:background="@drawable/tag_1_line"
+        android:gravity="center"
+        android:layout_width="23dp"
+        android:textSize="14dp"
+        android:textColor="@color/tagColor"
+        android:text="新"
+        android:layout_height="23dp" />
+</LinearLayout>

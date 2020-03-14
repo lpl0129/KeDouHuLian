@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/screen_left"
+    android:paddingRight="@dimen/screen_right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/timeDay"
+                style="@style/deepFont_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="27 " />
+
+            <TextView
+                android:id="@+id/timeMonth"
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="/ 5月" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/socreTv"
+            style="@style/primaryFont_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="工作完成后将获得0.006个蝌蚪币" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/titleTv"
+        style="@style/deepFont_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:text="titme"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/locationTv"
+                style="@style/deepFont_13"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/dingwei_icn"
+                android:drawablePadding="4dp"
+                android:singleLine="true"
+                android:text="北京市" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="佣金:  " />
+
+            <TextView
+                android:id="@+id/priceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="300.00"
+                android:textColor="@color/tagColor"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/priceUnitTv"
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/天" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="人数:  " />
+
+            <TextView
+                android:id="@+id/numberAcountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="30%"
+                android:textColor="@color/tagColor"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/人" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

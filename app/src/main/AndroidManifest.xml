@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.qttx.kedouhulian">
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.qttx.kedouhulian.ui.common.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.wallet.WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatSearchUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.TradePublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.TradeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.buunty.BountyDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.redpacket.RedPacketPublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.task.TaskComplainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.task.TaskSubmitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.task.TaskOrderDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".receiver.UpLoadToOssServices"
+            android:exported="true"
+            android:label="UploadService" />
+
+        <activity
+            android:name=".ui.reward.task.TaskPublishActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.PerfectUserDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.BindPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.FindPsdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.common.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.user.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="${UMENG_ANALYSIS_APPKEY}" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="linjinsuo" /> <!-- QQ相关 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="${qqManifestApikey}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- 微信相关开始 -->
+        <activity
+            android:name=".ui.common.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Transparent" />
+
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:targetActivity=".ui.common.WXEntryActivity" />
+
+        <activity
+            android:name=".ui.common.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/Transparent" />
+
+        <activity-alias
+            android:name="${applicationId}.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:targetActivity=".ui.common.WXPayEntryActivity" /> <!-- 微信相关结束 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/rc_file_path" />
+        </provider>
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="375" />
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="667" /> <!-- 高德地图mapkey -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${MAP_APPKEY}" />
+
+        <service android:name="com.amap.api.location.APSService" /> <!-- 融云imlib config begin -->
+        <meta-data
+            android:name="RONG_CLOUD_APP_KEY"
+            android:value="${RONG_CLOUD_APP_KEY}" /> <!-- 融云聊天界面配置开始 -->
+        <activity
+            android:name=".ui.chat.ConversationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="${applicationId}"
+                    android:pathPrefix="/conversation/"
+                    android:scheme="rong" />
+            </intent-filter>
+        </activity> <!-- 聚合会话列表 -->
+        <!-- <activity -->
+        <!-- android:name=".ui.activity.SubConversationListActivity" -->
+        <!-- android:launchMode="singleTask" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="stateHidden|adjustResize"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.VIEW" /> -->
+        <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+        <!-- <data -->
+        <!-- android:host="${applicationId}" -->
+        <!-- android:path="/subconversationlist" -->
+        <!-- android:scheme="rong" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".ui.common.ChooseCity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.RewardHunterMainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.task.TaskCommentActivity"
+            android:theme="@style/NoTitleTranslucentTheme"
+            android:windowSoftInputMode="adjustPan|stateVisible" />
+        <activity
+            android:name=".ui.reward.task.MyTaskActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.task.MyTaskDeatilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.task.WaitVerifyTaskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.redpacket.RedPacketDetailActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation|layoutDirection"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.reward.redpacket.MyRedPacketActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.buunty.BountyPublishActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.buunty.MyBountyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pond.MyPondActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.TradeMarketActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.pond.PondDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trade.MyTradeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatInviteToGroupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatFirendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatApplyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatPrivateSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatSetMarkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatGroupDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatGroupMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatSetGroupNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatGroupListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.UserDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.EditNickNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.UserQrcodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wallet.WalletPayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wallet.WalletCashActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wallet.WalletAcountAliActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wallet.WalletAcountWxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.wallet.WallAesstListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.CopartnerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.UserBonusActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatCustomMsgActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.chat.ChatBountyMemberActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.user.UserDataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.common.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.reward.msg.HomeMsghActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.common.MineNotifyWebActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.user.UserComplainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".ui.wallet.WalletAcountBankActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.reward.task.TaskHomeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.reward.buunty.BountyComplainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.common.AMapPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.chat.SealSearchChattingDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.chat.SealSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.chat.ZhuanZhangActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.wallet.WalKeDoulAesstListActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".ui.user.UserPerActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".ui.user.EditPsdActivity" android:screenOrientation="portrait" /> <!-- 融云聊天界面配置结束 -->
+        <!-- 融云推送配置 -->
+        <receiver
+            android:name=".receiver.RongImNotificationReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="io.rong.push.intent.MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_ARRIVED" />
+                <action android:name="io.rong.push.intent.MESSAGE_CLICKED" />
+                <action android:name="io.rong.push.intent.MI_MESSAGE_CLICKED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receiver.JPushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION" /> <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+
+
+
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            tools:node="replace"
+            android:process="com.jpush"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.stay.toolslibrary.widget.MyLinearLayout
+        android:id="@+id/errViewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/whiteColor"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/error_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/toolslib_no_network" />
+
+        <TextView
+            android:id="@+id/error_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="22dp"
+            android:singleLine="true"
+            android:text="@string/net_error_ref"
+            android:textColor="@color/tintColor"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/error_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/primary_3_bk"
+            android:paddingBottom="8dp"
+            android:paddingLeft="68dp"
+            android:paddingRight="68dp"
+            android:paddingTop="8dp"
+            android:text="@string/click_to_reload"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </com.stay.toolslibrary.widget.MyLinearLayout>
+
+</LinearLayout>

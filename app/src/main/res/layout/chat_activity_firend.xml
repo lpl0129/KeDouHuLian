@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:id="@+id/newFirendLl"
+        style="@style/layoutViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yaoqinghaoyou_icn" />
+
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="新朋友" />
+
+
+        <ImageView
+            android:id="@+id/newFirendIv"
+            android:layout_width="@dimen/dimen_10"
+            android:layout_height="@dimen/dimen_10"
+            android:src="@drawable/toolslib_tab_message_notify_bk" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youjiantou_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/charGroupLl"
+        style="@style/layoutViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/chat_group_icon" />
+
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:text="群聊" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youjiantou_btn" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:background="@color/bgColor"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/whiteColor"
+                />
+        </LinearLayout>
+
+        <com.stay.toolslibrary.widget.AlphabetInviteScrollBar
+            android:id="@+id/bar"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/whiteColor" />
+
+        <TextView
+            android:id="@+id/select"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:background="@drawable/user_select"
+            android:gravity="center"
+            android:textColor="@color/whiteColor"
+            android:textSize="25sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:background="#FFE0E0E0"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/incomeTv"
+                style="@style/deepFont_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计获得分红：0元" />
+
+            <TextView
+                android:id="@+id/vpartnercountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="(当天未领取的分红将自动计入次日奖金池）"
+                android:textColor="@color/tagColor"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/deepFont_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="领取时间" />
+
+            <TextView
+                android:id="@+id/timeTv"
+                style="@style/deepFont_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="每天 17:00-18:00" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_210"
+        android:layout_margin="10dp"
+        android:background="@drawable/white_5_bk"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/deepFont_17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:text="倒计时"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <TextView
+                android:id="@+id/hTv"
+                android:gravity="center"
+                style="@style/white_15"
+                android:text="00"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:background="@drawable/primary_5_bk" />
+
+            <TextView
+
+                style="@style/deepFont_17"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:gravity="center"
+                android:text=":" />
+
+
+            <TextView
+                android:id="@+id/mTv"
+                android:gravity="center"
+                style="@style/white_15"
+                android:text="00"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:background="@drawable/primary_5_bk" />
+
+            <TextView
+                style="@style/deepFont_17"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:gravity="center"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/sTv"
+                android:gravity="center"
+                style="@style/white_15"
+                android:text="00"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:background="@drawable/primary_5_bk" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/getBonusTv"
+            style="@style/white_16"
+            android:layout_width="@dimen/dimen_210"
+            android:layout_height="@dimen/dimen_36"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dimen_44"
+            android:background="@drawable/primary_15_bk"
+            android:gravity="center"
+            android:text="立即领取" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/deepFont_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/dimen_20"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:textColor="@color/tagColor"
+        android:text="每日分红规则" />
+
+    <TextView
+        android:id="@+id/descriptionTv"
+        style="@style/deepFont_14"
+        android:textColor="@color/tagColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/screen_left"
+        android:layout_marginRight="@dimen/screen_right"
+        android:lineSpacingMultiplier="1.2"
+        android:text="1、系统将会根据当天的收益情况和用户活跃度进行评分，计算已发放蝌蚪币的平均价值，蝌蚪币持有者获得分红的多少完全取决于其所持有蝌蚪币数量的多少。\n\n2、蝌蚪币作为平台内唯一指定分红依据，仅限平台内使用和交易，不得用于任何第三方担保或等值类交易。\n\n3、蝌蚪币政策的最终解释权归蝌蚪互联平台所有。" />
+</LinearLayout>

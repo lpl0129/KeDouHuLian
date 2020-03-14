@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+
+        <com.stay.toolslibrary.widget.ScrollableLayout
+            android:id="@+id/scrollableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80"
+                    android:background="@color/primaryColor"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/screen_left"
+                    android:paddingRight="@dimen/screen_right">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/partnercountTv"
+                            style="@style/white_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="合伙人总数量：0人" />
+
+                        <TextView
+                            android:id="@+id/vpartnercountTv"
+                            style="@style/white_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="有效合伙人数量：0人" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/white_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="累计收益" />
+
+                        <TextView
+                            android:id="@+id/incomeTv"
+                            style="@style/white_14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="0元" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/deepFont_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_50"
+                    android:gravity="center"
+                    android:text="我的专属邀请方式" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/screen_left"
+                    android:paddingRight="@dimen/screen_right">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:background="@drawable/spite_3_line"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/qrcodeIv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/saveQrcodeTv"
+                            style="@style/primaryFont_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_44"
+                            android:gravity="center"
+                            android:text="保存二维码" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:background="@drawable/spite_3_line"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/qrcodeUrlTv"
+                                style="@style/deepFont_13"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/copyQrcodeUrlTv"
+                            style="@style/primaryFont_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_44"
+                            android:gravity="center"
+                            android:text="复制专属链接" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="110dp"
+                            android:background="@drawable/spite_3_line"
+                            android:padding="10dp">
+
+                            <TextView
+                                android:id="@+id/inviteCode"
+                                style="@style/deepFont_13"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/copyInviteCode"
+                            style="@style/primaryFont_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_44"
+                            android:gravity="center"
+                            android:text="复制邀请码" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_10"
+                    android:background="@color/bgColor" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_44">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        style="@style/deepFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="姓名" />
+
+                    <TextView
+                        style="@style/deepFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="加入时间" />
+
+                    <TextView
+                        style="@style/deepFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="累计贡献金额" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="bottom"
+                    android:background="@color/spiteColor" />
+
+            </FrameLayout>
+
+            <com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ptrlayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout>
+        </com.stay.toolslibrary.widget.ScrollableLayout>
+</LinearLayout>

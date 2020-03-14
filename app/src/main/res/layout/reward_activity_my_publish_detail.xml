@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/screen_left"
+            android:paddingRight="@dimen/screen_right">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/timeDay"
+                        style="@style/deepFont_18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="27 " />
+
+                    <TextView
+                        android:id="@+id/timeMonth"
+                        style="@style/deepFont_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="/ 5月" />
+                </LinearLayout>
+
+
+                <TextView
+                    style="@style/deepFont_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="完成进度:  " />
+
+                <TextView
+                    android:id="@+id/rateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="30%"
+                    android:textColor="@color/tagColor"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/titleTv"
+                style="@style/deepFont_15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.2"
+                android:text="titme"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/priceTv"
+                    style="@style/deepFont_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/yongjin_icn"
+                    android:drawablePadding="4dp"
+                    android:text="5.50"
+                    android:textColor="@color/tagColor"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/allAcountTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:singleLine="true"
+                    android:text="总数量: 288" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spiteColor" />
+
+
+            <TextView
+                android:id="@+id/contentTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingMultiplier="1.2"
+                android:text="titme"
+                android:textColor="#555555"
+                android:textSize="14dp" />
+
+
+            <com.stay.toolslibrary.widget.ImageGrideShow
+                android:id="@+id/imageShowLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/bgColor" />
+
+    <LinearLayout
+        android:id="@+id/desNumLl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="待审任务" />
+
+        <TextView
+            android:id="@+id/dsnumTv"
+            style="@style/deepFont_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="5个"
+            android:textColor="@color/tagColor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youjiantou_btn" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.stay.toolslibrary.library.update.UpdateLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_update_bg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="160"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发现新版本"
+                android:textColor="#1793FD"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_version_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#1793FD"
+                android:textSize="16sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:id="@+id/lLayout_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_not"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_rect_btn_update_cancel"
+                        android:text="下次再说"
+                        android:textColor="@color/whiteColor"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/lLayout_updating"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="15dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <ProgressBar
+                            style="@style/Widget.AppCompat.ProgressBar"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:indeterminateTint="#1793FD"
+                            android:indeterminateTintMode="src_atop" />
+
+                        <TextView
+                            android:id="@+id/txt_progress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="更新中..."
+                            android:textColor="#1793FD"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_yes"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/shape_rect_btn_update"
+                        android:text="立即更新"
+                        android:textColor="@color/whiteColor" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_update_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/lLayout_bottom"
+                    android:layout_marginBottom="10dp"
+                    android:scrollbars="none"
+                    android:textColor="@color/deepColor"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.stay.toolslibrary.library.update.UpdateLinearLayout>
+
+</LinearLayout>

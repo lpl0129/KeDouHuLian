@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/des_et"
+            style="@style/deepFont_14"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:layout_margin="@dimen/screen_left"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入.."
+            android:lineSpacingMultiplier="1.2"
+            android:textColorHint="@color/hintColor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/bgColor" />
+
+        <TextView
+            style="@style/tintFont_16"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"
+            android:text="上传任务图片" />
+
+        <com.qttx.kedouhulian.weight.UploadDaiYanImageLayout
+            android:id="@+id/taskImageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@color/whiteColor"
+            android:scrollbars="none">
+
+        </com.qttx.kedouhulian.weight.UploadDaiYanImageLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/submitTv"
+        style="@style/textViewStyle_Button_Margin"
+        android:layout_marginTop="29dp"
+        android:text="立即提交" />
+</LinearLayout>

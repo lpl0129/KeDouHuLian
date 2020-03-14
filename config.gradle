@@ -1,0 +1,20 @@
+ext {
+    //android开发版本配置
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 19,
+            targetSdkVersion : 27,
+            supperVsersion: "28.0.0"
+    ]
+    maven = [
+            url     : 'http://hyr.liubanglong.cn:8081/repository/android/',
+            username: 'stay',
+            password: 'stay123456',
+            groupId : 'com.qttx.stay',
+            version : '1.0.2',
+            realseVersion : '1.0.0'
+    ]
+}
+
+

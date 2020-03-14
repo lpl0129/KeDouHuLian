@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:id="@+id/userLl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_75"
+        android:layout_marginTop="10dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <ImageView
+            android:id="@+id/userAvatarIv"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_height="@dimen/dimen_45" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/userNameTv"
+                style="@style/deepFont_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/noteTv"
+                style="@style/tintFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:text=""
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/erweima_btn" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youjiantou_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@color/spiteColor"
+        android:orientation="vertical"
+        android:showDividers="middle">
+        <LinearLayout
+            android:id="@+id/editpsdLl"
+            style="@style/layoutViewStyle">
+
+            <TextView
+                style="@style/deepFont_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="修改密码" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youjiantou_btn" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/serverLl"
+            style="@style/layoutViewStyle">
+
+            <TextView
+                style="@style/deepFont_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="在线客服" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youjiantou_btn" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/contactLl"
+            style="@style/layoutViewStyle">
+
+            <TextView
+                style="@style/deepFont_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="联系我们" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youjiantou_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutLl"
+            style="@style/layoutViewStyle">
+
+            <TextView
+                style="@style/deepFont_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="使用指南" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youjiantou_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/updaetLl"
+            style="@style/layoutViewStyle">
+
+            <TextView
+                style="@style/deepFont_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="版本更新" />
+
+            <TextView
+                android:id="@+id/versionTv"
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="v1.0.1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youjiantou_btn" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/suggestLl"
+            style="@style/layoutViewStyle">
+
+            <TextView
+                style="@style/deepFont_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="投诉建议" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/youjiantou_btn" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

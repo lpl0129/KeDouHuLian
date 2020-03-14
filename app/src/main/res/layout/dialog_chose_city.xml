@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="46.0dip"
+                    android:paddingLeft="@dimen/screen_left">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="已选地区" />
+
+                    <TextView
+                        android:id="@+id/clear_select_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/screen_left"
+                        android:text="清空"
+                        android:textColor="@color/primaryColor" />
+                </FrameLayout>
+
+                <com.stay.toolslibrary.library.nestfulllistview.NestFullGridView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/nestselectview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/screen_left"
+                    android:layout_marginRight="@dimen/screen_right"
+                    app:gridHorizontalSpace="9dp"
+                    app:gridSpan="4"
+                    app:gridVerticalSpace="6dp">
+
+                </com.stay.toolslibrary.library.nestfulllistview.NestFullGridView>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:layout_marginTop="21dp"
+                    android:background="@color/bgColor" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="46.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/screen_left">
+
+                <TextView
+                    style="@style/deepFont_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="选择:" />
+
+
+                    <TextView
+                        android:id="@+id/parent_tv"
+                        style="@style/deepFont_15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="全国" />
+
+                    <TextView
+                        android:id="@+id/backlevel_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center"
+                        android:paddingRight="@dimen/screen_left"
+                        android:text="返回上一级"
+                        android:textColor="@color/primaryColor" />
+
+
+            </LinearLayout>
+            <com.stay.toolslibrary.library.nestfulllistview.NestFullGridView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/nestcityview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_left"
+                android:layout_marginRight="@dimen/screen_right"
+                app:gridHorizontalSpace="9dp"
+                app:gridSpan="4"
+                app:gridVerticalSpace="6dp">
+
+            </com.stay.toolslibrary.library.nestfulllistview.NestFullGridView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/sure_button"
+        style="@style/deepFont_16"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/primaryColor"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/whiteColor" />
+</LinearLayout>

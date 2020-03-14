@@ -1,0 +1,89 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "org.jetbrains.dokka-android"
+def supperversion = rootProject.ext.android.supperVsersion
+androidExtensions {
+    experimental = true
+}
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        vectorDrawables.useSupportLibrary = true
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    productFlavors {
+    }
+}
+//库 Module 的 build.gradle
+task generateSourcesJar(type: Jar) {
+    group = 'jar'
+    from android.sourceSets.main.java.srcDirs
+    classifier = 'sources'
+}
+
+task javadoc(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+}
+
+task dokkaJavadoc(type: org.jetbrains.dokka.gradle.DokkaTask) {
+    outputFormat = "javadoc"
+    outputDirectory = javadoc.destinationDir
+}
+
+task generateJavadoc(type: Jar, dependsOn: dokkaJavadoc) {
+    group = 'jar'
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+}
+
+artifacts {
+    //在频繁打包交付测试时，可暂时注释掉文档打包，提高打包效率
+//    archives generateJavadoc
+
+    archives generateSourcesJar
+}
+
+apply plugin: 'maven'
+def maven = rootProject.ext.maven
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            //仓库地址
+            repository(url:  maven.url) {
+                // 验证账号，即nexus服务管理账号
+                authentication(userName: maven.username, password: maven.password)
+            }
+            pom.groupId = maven.groupId // 组织id，一般习惯用包名标识
+            pom.artifactId = 'basiclib' // 项目名
+            pom.version ='1.0.4' //发布版本号
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
+
+dependencies {
+    api project(':basicmatisse')
+}
+repositories {
+    mavenCentral()
+}

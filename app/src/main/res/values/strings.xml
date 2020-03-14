@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="login">登录</string>
+    <string name="login_forget_password_ques">忘记密码?</string>
+    <string name="login_username_email_mobile">请输入手机号</string>
+    <string name="login_please_input_password_no_null">请输入确认密码</string>
+    <string name="login_third_party">第三方账号登录</string>
+    <string name="login_third_party_weixin">微信</string>
+    <string name="login_third_party_weibo">微博</string>
+    <string name="login_third_party_qq">QQ</string>
+
+    <string name="errcode_unsupported">不支持错误</string>
+    <string name="weibosdk_demo_toast_share_success">分享成功</string>
+    <string name="weibosdk_demo_toast_share_failed">分享失败</string>
+    <string name="weibosdk_demo_toast_share_canceled">取消分享</string>
+    <string name="errcode_success">登录</string>
+    <string name="errcode_cancel">取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">登录返回</string>
+
+    <string name="register">注册</string>
+    <string name="register_click_and_agree">点击注册表示同意</string>
+    <string name="register_profile">《注册用户协议》</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_image_code">图片验证码</string>
+    <string name="input_phone_code">请输入验证码</string>
+    <string name="get_phone_code">获取验证码</string>
+    <string name="set_password">设置密码</string>
+    <string name="sure_password">确认密码</string>
+    <string name="register_recommend_phone">推荐人手机号(非必填)</string>
+    <string name="password_rule">6-20位数字/字母/符号</string>
+
+    <string name="bind_mobile">绑定账号</string>
+
+    <string name="sure">确定</string>
+    <string name="cancle">取消</string>
+    <string name="save">保存</string>
+
+    <string name="please_input_new_password">请输入新密码</string>
+    <string name="please_input_nickname">请输入昵称</string>
+    <string name="please_input_old_password">请输入旧密码</string>
+    <string name="please_input_sure_password">请输入确认密码</string>
+
+
+    <string name="user_info_avatar">修改头像</string>
+    <string name="user_info_password">修改登录密码</string>
+    <string name="user_info_sigin">签名</string>
+    <string name="user_info_sex">性别</string>
+    <string name="user_info_phone">修改手机号</string>
+    <string name="user_info_username">名称</string>
+    <string name="user_info_birthday">出生日期</string>
+    <string name="user_info_city">所在城市</string>
+    <string name="user_info_bind_third_account">第三方账号绑定</string>
+
+    <string name="setting_about_us">关于我们</string>
+    <string name="setting_about_us_phone">客服电话</string>
+    <string name="setting_about_us_deal">用户协议</string>
+    <string name="setting_clear_cache">清除缓存</string>
+    <string name="setting_loginout">退出登录</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+
+    <string name="tab_1_title">蝌蚪赏金</string>
+    <string name="tab_2_title">呱呱聊</string>
+    <string name="tab_3_title">蝌蚪池塘</string>
+    <string name="tab_4_title">我的</string>
+
+
+    <string name="string_origin_location" />
+    <string name="string_origin_direction" />
+    <string name="string_origin_spe" />
+    <string name="string_popup_assets">资产</string>
+    <string name="string_popup_secret_books">秘籍</string>
+    <string name="string_popup_ranking_list">排行榜</string>
+    <string name="string_popup_play_continue">继续播放</string>
+    <string name="string_production_of_money">弹钱中...</string>
+    <string name="string_dynamic_current">当前弹力值:%1$1s</string>
+    <string name="string_production_of_money_new_user">弹钱中，明天来领吧！</string>
+    <string name="string_next_stag_leading_money_early">现在没了，明天来领吧！</string>
+    <string name="string_next_stag_leading_money_middle">现在没了，下午来领吧！</string>
+    <string name="string_next_stag_leading_money_late">现在没了，夜晚来领吧！</string>
+
+
+    <string name="string_guize">1、通过做赏金任务获得蝌蚪币；\n2、通过领取广告红包获得蝌蚪币；\n3、通过赏金猎人发布招聘信息获得蝌蚪币；\n4、通过购买池塘获得蝌蚪币；\n5、通过蝌蚪币自由交易市场获得蝌蚪币；</string>
+    <string name="string_speed"/>
+    <string name="string_init_location" />
+    <string name="string_direction_isup" />
+
+    <string name="ac_search_no_result_pre">没有搜到</string>
+    <string name="ac_search_no_result_suffix">相关的信息</string>
+    <string name="search_item_chat_records">%d条相关记录</string>
+
+
+    <string name="ac_search_friend">联系人</string>
+    <string name="ac_search_group">群组</string>
+    <string name="ac_search_chatting_records">聊天记录</string>
+    <string name="ac_search_more_friend">查看更多联系人</string>
+    <string name="ac_search_more_group">查看更多群组</string>
+    <string name="ac_search_more_chatting_records">查看更多聊天记录</string>
+
+    <string name="ac_search_chat_detail">共%1$d条与</string>
+    <string name="ac_search_chat_detail_three">相关的聊天记录</string>
+
+</resources>

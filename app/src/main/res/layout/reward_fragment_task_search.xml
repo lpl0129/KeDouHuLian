@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/titleFl"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:background="@color/titleBkColor">
+
+        <ImageView
+            android:id="@+id/topBackIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/screen_left"
+            android:src="@drawable/fanhui_btn" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65.0dip"
+            android:layout_marginRight="65.0dip"
+            android:singleLine="true"
+            android:textColor="@color/deepColor"
+            android:textSize="17.0sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/searchLl"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <ImageView
+            android:id="@+id/topBackIv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/fanhui_btn" />
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            style="@style/layoutViewStyle_EditBk"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sousuo_icn" />
+
+            <EditText
+                android:id="@+id/searchEt"
+                style="@style/editViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入搜索关键字"
+                android:inputType="text" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/searchTv"
+            style="@style/deepFont_12"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/search_bt_bk"
+            android:gravity="center"
+            android:text="搜索" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout
+            android:id="@+id/ptrlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout>
+
+        <com.qttx.kedouhulian.weight.DragFloatActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/floatBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="50dp"
+            android:scaleType="center"
+         />
+    </FrameLayout>
+
+</LinearLayout>

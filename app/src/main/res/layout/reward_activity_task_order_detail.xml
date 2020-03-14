@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/screen_left"
+                android:paddingRight="@dimen/screen_right">
+
+                <ImageView
+                    android:id="@+id/userAvatarIv"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/user_avatar_default" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/userName"
+                            style="@style/deepFont_15"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:singleLine="true"
+                            android:text="大萨达萨达啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊" />
+
+                        <TextView
+                            android:id="@+id/taskState"
+                            style="@style/primaryFont_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="任务进行中" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/priceTv"
+                            style="@style/deepFont_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/yongjin_icn"
+                            android:drawablePadding="4dp"
+                            android:text="5.50"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/priceDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:singleLine="true"
+                            android:text="[完成可获得0.005个蝌蚪币]" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/spiteColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/screen_left"
+                android:paddingRight="@dimen/screen_right"
+                android:paddingBottom="15dp">
+
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    style="@style/deepFont_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="titme"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/contentTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="titme"
+                    android:textColor="#555555"
+                    android:textSize="14dp" />
+
+
+                <com.stay.toolslibrary.widget.ImageGrideShow
+                    android:id="@+id/imageShowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/imageHideTv"
+                    style="@style/tintFont_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:background="@color/bgColor"
+                    android:gravity="center"
+                    android:text="该任务已设置了图片隐藏，抢单后方可查看" />
+
+                <TextView
+                    android:id="@+id/restrictTome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawablePadding="4dp"
+                    android:text="每个人只限做1次"
+                    android:textColor="@color/tagColor"
+                    android:textSize="13dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/bgColor" />
+
+
+            <LinearLayout
+                android:id="@+id/taskorderLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/screen_left"
+                android:paddingRight="@dimen/screen_right"
+                android:paddingBottom="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_35"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/taskOrderNumberTv"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="titme"
+                        android:textColor="@color/tintColor"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/taskOrderTimeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="titme"
+                        android:textColor="@color/tintColor"
+                        android:textSize="12dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/taskContentTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="titme"
+                    android:textColor="@color/deepColor"
+                    android:textSize="14dp" />
+
+
+                <com.stay.toolslibrary.widget.ImageGrideShow
+                    android:id="@+id/taskImageShowLayout"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/refuse_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="titme"
+                    android:textColor="@color/tagColor"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/managerFl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/spiteColor" />
+
+
+        <TextView
+            android:id="@+id/getTaskTv"
+            style="@style/textViewStyle_Button_Margin"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:text="修改任务"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/submitTask"
+            style="@style/primaryFont_15"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/screen_left"
+            android:layout_marginRight="@dimen/screen_right"
+            android:background="@drawable/primary_15_line"
+            android:gravity="center"
+            android:text="提交任务"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

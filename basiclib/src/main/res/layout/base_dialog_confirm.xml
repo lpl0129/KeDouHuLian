@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.0dip"
+        android:gravity="center"
+        android:text="提示"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/deepColor"
+        android:textSize="18.0dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="14.0dip"
+        android:layout_marginRight="22dp"
+        android:maxHeight="140.0dip"
+        android:text="message"
+        android:textColor="@color/deepColor"
+        android:textSize="16.0dip" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/cancle_tv"
+            style="@style/tintFont_14"
+            android:layout_width="110dp"
+            android:layout_height="32dp"
+            android:background="@drawable/spite_5_line"
+            android:gravity="center"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/sure_tv"
+            style="@style/primaryFont_15"
+            android:layout_width="110dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="38dp"
+            android:background="@drawable/primary_5_line"
+            android:gravity="center"
+            android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

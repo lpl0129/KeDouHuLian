@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/taskTypeLl"
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的蝌蚪币资产：" />
+
+                    <TextView
+                        android:id="@+id/allPriceTv"
+                        style="@style/deepFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/tagColor" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出售数量" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskAcountEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="输入本次出售的数量，可输入小数点后4位"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="出售单价" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskPriceEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="输入每一枚蝌蚪币的出售价格"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="是否接受议价" />
+
+                    <TextView
+                        android:id="@+id/agreeTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="接受" />
+
+
+                    <TextView
+                        android:id="@+id/refuseTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="不接受" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="（洽谈按钮将置灰）"
+                        android:textColor="@color/tintColor"
+                        android:textSize="10dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="置顶悬赏" />
+
+                    <TextView
+                        android:id="@+id/noTopTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="不置顶" />
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/isTopTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="置顶2.00/次" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(交易额" />
+
+                    <TextView
+                        android:id="@+id/taskPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/tagColor" />
+
+
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+置顶费" />
+
+                    <TextView
+                        android:id="@+id/topPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/tagColor" />
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/spiteColor" />
+
+        <TextView
+            android:id="@+id/publishTv"
+            style="@style/textViewStyle_Button_Margin"
+            android:layout_gravity="center"
+            android:text="确认发布" />
+
+    </FrameLayout>
+</LinearLayout>

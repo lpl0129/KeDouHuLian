@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <com.stay.toolslibrary.library.nestfulllistview.NestFullGridView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/gride_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:gridHorizontalSpace="5dp"
+        app:gridVerticalSpace="5dp"
+        app:gridIsSqaure="true"
+        app:gridSpan="3">
+    </com.stay.toolslibrary.library.nestfulllistview.NestFullGridView>
+</LinearLayout>

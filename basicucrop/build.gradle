@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+//apply from: '../mavenpush.gradle'
+
+
+apply plugin: 'maven'
+def maven = rootProject.ext.maven
+uploadArchives {
+    repositories {
+        mavenDeployer {
+
+            //仓库地址
+            repository(url:  maven.url) {
+                // 验证账号，即nexus服务管理账号
+                authentication(userName: maven.username, password: maven.password)
+            }
+            pom.groupId = maven.groupId // 组织id，一般习惯用包名标识
+            pom.artifactId = 'basicucrop' // 项目名
+            pom.version = maven.version //发布版本号
+        }
+    }
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode 22
+        versionName "2.2.0-native"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    resourcePrefix 'ucrop_'
+
+}
+
+dependencies {
+    api project(':basicres')
+}

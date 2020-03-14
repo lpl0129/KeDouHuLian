@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/taskTypeLl"
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务类型" />
+
+                    <TextView
+                        android:id="@+id/taskTypeTv"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:hint="选择任务类型" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/taskTitleLl"
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务标题" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskTitleTv"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入标题"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="任务内容" />
+
+                    <EditText
+                        android:id="@+id/taskContentTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="请在此处输入任务内容"
+                        android:textColorHint="@color/hintColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/deepFont_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:gravity="center_vertical"
+                            android:text="任务内容  " />
+
+                        <TextView
+                            style="@style/hintFont_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(支持jpg、png、gif格式)" />
+                    </LinearLayout>
+
+
+                    <com.stay.toolslibrary.widget.UploadImageLayout
+                        android:id="@+id/taskImageLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/whiteColor"
+                        android:scrollbars="none" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="任务总量" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskAcountEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入正整数"
+                        android:inputType="phone"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每个任务赏金" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskPriceEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入回复的赏金(元／回复)"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="限制回复" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/replyNumberEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入每人可回复的数量"
+                        android:inputType="phone"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="每人限做次数" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/restrictTimeEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入每个人限做的任务数"
+                        android:inputType="phone"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="提交任务时间" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskTimeEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请设置提交任务倒计时时间(分钟)"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="图片显示" />
+
+                    <TextView
+                        android:id="@+id/imageShowTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="显示" />
+
+                    <TextView
+                        android:id="@+id/imageHideenTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="隐藏" />
+
+                    <TextView
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="显示"
+                        android:visibility="invisible" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="性别限制" />
+
+                    <TextView
+                        android:id="@+id/sexLimitTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="不限制" />
+
+                    <TextView
+                        android:id="@+id/sexBoyEableTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="男可抢" />
+
+                    <TextView
+                        android:id="@+id/sexGirlEableTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="女可抢" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/regionLimitLl"
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="区域限制" />
+
+                    <TextView
+                        android:layout_marginLeft="40dp"
+                        android:id="@+id/regionLimitTv"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:hint="投放地区可多选，不选则默认全国" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="置顶任务" />
+
+                    <TextView
+                        android:id="@+id/noTopTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="不置顶" />
+
+                    <TextView
+                        android:id="@+id/isTopTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="置顶2.00/次" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(任务费" />
+
+                    <TextView
+                        android:id="@+id/taskPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/tagColor" />
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+服务费" />
+
+                    <TextView
+                        android:id="@+id/serverPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/tagColor" />
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+置顶费" />
+
+                    <TextView
+                        android:id="@+id/topPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/tagColor" />
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/spiteColor" />
+
+        <TextView
+            android:id="@+id/publishTv"
+            style="@style/textViewStyle_Button_Margin"
+            android:layout_gravity="center"
+            android:text="确认发布" />
+
+    </FrameLayout>
+</LinearLayout>

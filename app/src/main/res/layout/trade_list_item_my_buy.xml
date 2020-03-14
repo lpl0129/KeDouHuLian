@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/whiteColor"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_15"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/timeDay"
+                    style="@style/deepFont_18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="27 " />
+
+                <TextView
+                    android:id="@+id/timeMonth"
+                    style="@style/deepFont_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="/ 5月" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/chartTv"
+                android:layout_width="60dp"
+                android:layout_height="23dp"
+                android:background="@drawable/primary_10_bk"
+                android:gravity="center"
+                android:text="洽谈"
+                android:textColor="@color/whiteColor"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/numberTv"
+            style="@style/deepFont_14"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawablePadding="4dp"
+            android:singleLine="true"
+            android:text="北京市" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sellPriceTv"
+                style="@style/deepFont_14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="4dp"
+                android:singleLine="true"
+                android:text="北京市" />
+
+            <TextView
+                android:id="@+id/sellNameTv"
+                style="@style/deepFont_14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="17dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="北京市" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    style="@style/deepFont_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="发布者:  " />
+
+                <TextView
+                    android:id="@+id/publishUserNameTv"
+                    style="@style/deepFont_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:text="" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left">
+
+                <TextView
+                    android:paddingLeft="17dp"
+                    style="@style/deepFont_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单状态:  " />
+
+                <TextView
+                    android:id="@+id/statusTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="进行中"
+                    android:textColor="@color/tagColor"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/managerLl"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+
+            <TextView
+                android:id="@+id/cancletv"
+                android:layout_width="72dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/primary_15_line"
+                android:gravity="center"
+                android:text="撤销订单"
+                android:textColor="@color/primaryColor"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/pay_tv"
+                android:layout_width="72dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/tag_15_line"
+                android:gravity="center"
+                android:text="支付"
+                android:textColor="@color/tagColor"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

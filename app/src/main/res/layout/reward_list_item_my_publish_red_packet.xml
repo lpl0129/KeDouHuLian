@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/screen_left"
+    android:paddingRight="@dimen/screen_right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/timeTv"
+                style="@style/deepFont_15"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="2019" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/timeDay"
+                style="@style/deepFont_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="27 " />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/timeMonth"
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="/ 5月" />
+
+            <TextView
+                android:id="@+id/state_tv"
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="/ 5月" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/titleTv"
+        style="@style/deepFont_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingMultiplier="1.2"
+        android:text="titme"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/spiteColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:gravity="center_vertical">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总额:  " />
+
+            <TextView
+                android:id="@+id/priceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥300.00"
+                android:textColor="@color/tagColor"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总数:  " />
+
+            <TextView
+                android:id="@+id/totalAcountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="300.00"
+                android:textColor="@color/tagColor"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="份" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <TextView
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余:  " />
+
+            <TextView
+                android:id="@+id/leftTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30%"
+                android:textColor="@color/tagColor"
+                android:textSize="12dp" />
+
+            <TextView
+                style="@style/deepFont_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="份/金额" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10"
+        android:background="@drawable/white_5_bk"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/modifyAvatarLl"
+            style="@style/layoutViewStyle"
+            android:layout_height="66dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/avatarIv"
+                android:layout_width="@dimen/dimen_36"
+                android:layout_height="@dimen/dimen_36" />
+
+            <TextView
+                android:id="@+id/nickerNameTv"
+                style="@style/deepFont_15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/spiteColor" />
+
+        <ImageView
+            android:id="@+id/userQrCodeIv"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="@dimen/dimen_15"
+            android:text="扫一扫上面的二维码图案，加我好友" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+package com.qttx.kedouhulian.bean
+
+data class MyGrapTaskBean(
+        var amend_status: Int = 0,
+        var appeal: String = "",
+        var city: Int = 0,
+        var content: String = "",
+        var create_time: Long = 0,
+        var create_time_text: String = "",
+        var day: String = "",
+        var district: Int = 0,
+        var false_info: String = "",
+        var finish_time: Int = 0,
+        var finish_time_text: String = "",
+        var from_uid: Int = 0,
+        var id: Int = 0,
+        var imgs: String = "",
+        var limit_time: Int = 0,
+        var limit_time_text: String = "",
+        var mobile: String? = null,
+        var month: String = "",
+        var number: String? = null,
+        var price: String = "",
+        var province: Int = 0,
+        var restrict_times: Int = 0,
+        var score: String = "",
+        var status: Int = 0,
+        var task_id: Int = 0,
+        var task_price: String? = null,
+        var title: String? = null,
+        var uid: Int = 0
+)

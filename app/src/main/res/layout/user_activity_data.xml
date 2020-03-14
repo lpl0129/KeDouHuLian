@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/whiteColor"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="@color/bgColor" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/modifyAvatarLl"
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="头像" />
+
+                    <ImageView
+                        android:id="@+id/avatarIv"
+                        android:layout_width="@dimen/dimen_30"
+                        android:layout_height="@dimen/dimen_30" />
+
+                    <ImageView
+                        android:id="@+id/avatarArrowIv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="@dimen/screen_left"
+                    android:layout_marginRight="@dimen/screen_right"
+                    android:background="@color/spiteColor" />
+
+                <LinearLayout
+                    android:id="@+id/nickerNameLl"
+                    style="@style/layoutViewStyle">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="昵称" />
+
+                    <TextView
+                        android:id="@+id/nickerNameTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="@dimen/screen_left"
+                    android:layout_marginRight="@dimen/screen_right"
+                    android:background="@color/spiteColor" />
+
+                <LinearLayout
+                    android:id="@+id/sexLl"
+                    style="@style/layoutViewStyle">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="性别" />
+
+                    <TextView
+                        android:id="@+id/sexTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="@dimen/screen_left"
+                    android:layout_marginRight="@dimen/screen_right"
+                    android:background="@color/spiteColor" />
+
+                <LinearLayout
+                    android:id="@+id/ageLl"
+                    style="@style/layoutViewStyle">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="年龄阶段" />
+
+                    <TextView
+                        android:id="@+id/ageTv"
+                        style="@style/deepFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="@dimen/screen_left"
+                    android:layout_marginRight="@dimen/screen_right"
+                    android:background="@color/spiteColor" />
+
+                <LinearLayout
+                    android:id="@+id/cityLl"
+                    style="@style/layoutViewStyle">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="常驻区域" />
+
+                    <TextView
+                        android:id="@+id/cityTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:background="@color/bgColor" />
+
+                <LinearLayout
+                    android:id="@+id/erCodeLl"
+                    style="@style/layoutViewStyle">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="二维码" />
+
+                    <TextView
+                        android:id="@+id/erCodeTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0px"
+                    android:layout_marginLeft="@dimen/screen_left"
+                    android:layout_marginRight="@dimen/screen_right"
+                    android:background="@color/spiteColor" />
+
+                <LinearLayout
+                    android:id="@+id/commitLl"
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="投诉建议" />
+
+                    <TextView
+                        android:id="@+id/commitTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/bgColor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bgColor">
+
+                    <TextView
+                        android:id="@+id/loginOutTv"
+                        style="@style/textViewStyle_Button_Margin"
+                        android:background="@drawable/tag_bk_18"
+                        android:text="退出" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

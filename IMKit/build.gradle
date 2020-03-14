@@ -1,0 +1,57 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 2019033000
+        versionName "2.9.13 Dev"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+            java.srcDirs = ['src/main/java']
+            resources.srcDirs = ['src/main/java']
+            renderscript.srcDirs = ['src/main/java']
+            res.srcDirs = ['src/main/res']
+            assets.srcDirs = ['src/main/assets']
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['src/main/libs']
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    api 'com.android.support:support-v4:26.0.0'
+    api 'com.googlecode.mp4parser:isoparser:1.1.21'
+    api 'com.android.support:exifinterface:26.0.0'
+    api project (':IMLib')
+    //定位功能
+    api 'com.amap.api:location:4.6.0'
+    //搜索功能
+    api 'com.amap.api:search:6.5.0.1'
+    //地图功能
+    api 'com.amap.api:3dmap:6.4.1'
+    api files('libs/Rong_IMKit.jar')
+    api files('libs/AMap_Channel_Location_V1.4.0_20160708.jar')
+}
+
+repositories {
+    maven {
+        url 'https://maven.google.com/'
+        name 'Google'
+    }
+}

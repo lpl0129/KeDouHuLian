@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/screen_left"
+    android:paddingRight="@dimen/screen_right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/userAvatarIv"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user_avatar_default" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/userName"
+                    style="@style/deepFont_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:text="大萨达萨达啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/locationTv"
+                    style="@style/deepFont_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/dingwei_icn"
+                    android:drawablePadding="4dp"
+                    android:singleLine="true"
+                    android:text="5.50" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/des_tv"
+            style="@style/deepFont_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/yongjin_icn"
+            android:drawablePadding="4dp"
+            android:textColor="@color/deepColor"
+            android:textSize="@dimen/dimen_14"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/titleTv"
+        style="@style/deepFont_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="titme"
+        android:textStyle="bold" />
+
+    <com.stay.toolslibrary.widget.ImageGrideShow
+        android:id="@+id/imageShowLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/imageHideTv"
+        style="@style/tintFont_14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="该任务已设置了图片隐藏，抢单后方可查看" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/tintFont_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已雇用／已报名／总人数" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:minWidth="140dp">
+
+                <TextView
+                    android:id="@+id/guyongTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1427"
+                    android:textColor="#FFF74040"
+                    android:textSize="12dp" />
+
+                <TextView
+                    style="@style/tintFont_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / " />
+
+                <TextView
+                    android:id="@+id/baomingTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1427"
+                    android:textColor="#FFF74040"
+                    android:textSize="12dp" />
+
+                <TextView
+                    style="@style/tintFont_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" / " />
+
+                <TextView
+                    android:id="@+id/countTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1427"
+                    android:textColor="#FFF74040"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/grapTv"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tag_15_line"
+            android:gravity="center"
+            android:text="报名 / 抢单"
+            android:textColor="@color/tagColor"
+            android:textSize="13dp" />
+    </LinearLayout>
+</LinearLayout>

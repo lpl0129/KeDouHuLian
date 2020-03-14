@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF2F2F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/spiteView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/spiteViewTop"
+                android:layout_width="1dp"
+                android:layout_height="22dp"
+                android:background="#FFCECECE" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/spiteIv"
+                    android:layout_width="@dimen/dimen_13"
+                    android:layout_height="@dimen/dimen_13"
+                    android:layout_gravity="center"
+                    android:src="@drawable/fabuxuanze_btn" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/msg_arrow" />
+
+            </FrameLayout>
+
+            <View
+
+                android:layout_width="1dp"
+                android:layout_height="70dp"
+                android:background="#FFCECECE" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/contentLl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_107"
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_11"
+                android:layout_marginBottom="11dp"
+                android:background="@drawable/white_5_bk"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/timeTv"
+                    style="@style/tintFont_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="text" />
+
+                <TextView
+                    android:id="@+id/contentTv"
+                    style="@style/deepFont_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:minLines="2"
+                    android:text="sddd" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

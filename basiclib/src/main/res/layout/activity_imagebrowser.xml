@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+
+        <com.stay.toolslibrary.widget.MyViewPager
+            android:id="@+id/imagebrowser_svp_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <TextView
+            android:id="@+id/show_tv"
+            style="@style/white_14"
+            android:layout_width="wrap_content"
+            android:minWidth="55dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tran_5_bk"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/save_tv"
+            style="@style/white_14"
+            android:layout_width="55dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="30dp"
+            android:background="@drawable/tran_5_bk"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="保存" />
+    </RelativeLayout>
+
+</LinearLayout>

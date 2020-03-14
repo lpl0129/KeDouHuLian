@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout
+            android:id="@+id/ptrlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout>
+
+        <com.qttx.kedouhulian.weight.DragFloatActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/floatBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="50dp"
+            android:scaleType="center"
+            android:src="@drawable/gongnengwa_btn" />
+    </FrameLayout>
+
+</LinearLayout>

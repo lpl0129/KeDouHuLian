@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/whiteColor"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/screen_left"
+    android:paddingRight="@dimen/screen_right">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="12dp">
+
+
+        <ImageView
+            android:id="@+id/avatar_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/user_avatar_default" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTv"
+                style="@style/deepFont_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="刘小姐" />
+
+
+            <TextView
+                android:id="@+id/timeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="2019.03.20 10:30"
+                android:textColor="@color/tintColor"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/replayTv"
+            android:layout_width="40dp"
+            android:text="回复"
+            style="@style/primaryFont_12"
+            android:gravity="center_vertical|right"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/contentTv"
+        style="@style/deepFont_13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="好棒好棒，真的好喜欢" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/commit_listview_ll"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:paddingTop="2dp"
+        android:background="@drawable/bgcolor_5_bk"
+        android:layout_height="wrap_content">
+
+
+        <com.stay.toolslibrary.library.nestfulllistview.NestFullListView
+            android:id="@+id/commit_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+         />
+
+        <TextView
+            android:id="@+id/open_all_tv"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:textColor="@color/tintColor"
+            android:drawableRight="@drawable/arrow_bk"
+            android:text="展开全部"
+            android:textSize="@dimen/dimen_12"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="14dp"
+        android:background="#EBEBEB" />
+
+</LinearLayout>

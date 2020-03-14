@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/attach"
+            android:layout_width="@dimen/dimen_45"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_height="@dimen/dimen_45"/>
+        <FrameLayout
+            android:id="@+id/top_view"
+            android:layout_width="fill_parent"
+            android:layout_height="45.0dip"
+            android:background="@color/titleBkColor">
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:padding="7.0dip"
+                android:textColor="@color/whiteColor"
+                android:textSize="16.0sp"
+                />
+
+            <ImageView
+                android:id="@+id/top_left"
+                android:visibility="gone"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/screen_left"
+                android:src="@drawable/fanhui_btn" />
+
+            <TextView
+                android:id="@+id/top_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="65.0dip"
+                android:layout_marginRight="65.0dip"
+                android:singleLine="true"
+                android:textColor="@color/deepColor"
+                android:textSize="17.0sp" />
+            <ImageView
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/top_iv_right"
+                android:layout_width="45.0dip"
+                android:layout_height="45.0dip"
+                android:layout_gravity="center|right"
+                android:padding="12.0dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/top_right_tv"
+                android:background="@drawable/spite_5_bk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我的好友"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="68.0dip"
+                android:gravity="center"
+                android:padding="@dimen/dimen_4"
+                android:textColor="@color/deepColor"
+                android:textSize="14.0sp"
+                android:visibility="visible" />
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/unread_iv"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="-9dp"
+                android:layout_width="6dp"
+                android:src="@drawable/notify_bk"
+                android:layout_height="6dp" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1.0px"
+                android:visibility="gone"
+                android:layout_gravity="bottom"
+                android:background="@color/spiteColor" />
+        </FrameLayout>
+
+    </FrameLayout>
+    <LinearLayout
+        android:background="@color/whiteColor"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <LinearLayout
+            style="@style/layoutViewStyle_EditBk"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sousuo_icn" />
+
+            <TextView
+                android:id="@+id/searchEt"
+                style="@style/editViewStyle"
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="搜索" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/chat_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+</LinearLayout>

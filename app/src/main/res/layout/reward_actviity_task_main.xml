@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@color/whiteColor"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingTop="5dp"
+        android:paddingRight="@dimen/screen_right"
+        android:paddingBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tab_bk_line"
+            android:padding="1dp">
+
+            <TextView
+                android:id="@+id/grapTaskTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tab_left_bk"
+                android:gravity="center"
+                android:text="赏金任务"
+                android:textColor="@color/tab_deep_2_white_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/redPacketRewardTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/tab_mid_bk"
+                android:gravity="center"
+                android:text="红包奖励"
+                android:textColor="@color/tab_deep_2_white_color"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/rewardHuntTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/tab_right_bk"
+                android:gravity="center"
+                android:text="赏金猎人"
+                android:textColor="@color/tab_deep_2_white_color"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

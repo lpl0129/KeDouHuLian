@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@color/whiteColor"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include
+            layout="@layout/top_view"/>
+    <LinearLayout
+            style="@style/layoutViewStyle_Edit"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shoujihao_icn"/>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffb2b2b2"/>
+
+        <com.stay.toolslibrary.widget.ClearEditText
+                android:id="@+id/phoneEditText"
+                style="@style/editViewStyle"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:hint="请输入您的手机号"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+            style="@style/layoutViewStyle_Edit"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yanzhengma_icn"/>
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffb2b2b2"/>
+
+        <com.stay.toolslibrary.widget.ClearEditText
+                android:id="@+id/signCodeEdit"
+                style="@style/editViewStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="6"
+                android:hint="请输入验证码"
+        />
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffb2b2b2"/>
+
+        <TextView
+                android:paddingLeft="15dp"
+                android:id="@+id/getCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/getcode_tv_color"
+                android:textSize="14dp"
+                android:text="短信验证码"
+        />
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_marginTop="15dp"
+            style="@style/layoutViewStyle_Edit"
+    >
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mima_icn"/>
+        <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffb2b2b2"/>
+        <com.stay.toolslibrary.widget.ClearEditText
+                android:id="@+id/psdEditText"
+                style="@style/editViewStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                android:hint="请输入新密码"
+        />
+
+        <View
+                android:layout_width="1dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="10dp"
+                android:background="#ffb2b2b2"/>
+
+        <ImageView
+                android:id="@+id/seePsdIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/biyanjing_btn"
+                android:layout_marginStart="14dp"/>
+
+    </LinearLayout>
+    <TextView
+            style="@style/textViewStyle_Button_Margin"
+            android:id="@+id/registerTv"
+            android:layout_marginTop="29dp"
+            android:text="提交"
+    />
+</LinearLayout>

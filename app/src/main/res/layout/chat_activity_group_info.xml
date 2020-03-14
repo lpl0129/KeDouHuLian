@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.stay.toolslibrary.library.nestfulllistview.NestFullGridView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/memberGridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/whiteColor"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                app:gridMaxItem="50"
+                app:gridSpan="5"
+                app:gridVerticalSpace="@dimen/dimen_15">
+
+            </com.stay.toolslibrary.library.nestfulllistview.NestFullGridView>
+
+            <TextView
+                android:id="@+id/allGroupTv"
+                style="@style/tintFont_14"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/whiteColor"
+                android:gravity="center"
+                android:text="全部成员"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/modifyAvatarLl"
+                style="@style/layoutViewStyle"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/deepFont_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="群头像" />
+
+                <ImageView
+                    android:id="@+id/avatarIv"
+                    android:layout_width="@dimen/dimen_30"
+                    android:layout_height="@dimen/dimen_30" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/avatarArrowIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youjiantou_btn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/set_remarks"
+                style="@style/layoutViewStyle"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/deepFont_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="群聊名称" />
+
+                <TextView
+                    android:id="@+id/markTv"
+                    style="@style/deepFont_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/nameArrowIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youjiantou_btn" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/group_id_ll"
+                style="@style/layoutViewStyle"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/deepFont_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="群号" />
+
+                <TextView
+                    android:id="@+id/group_id_tv"
+                    style="@style/deepFont_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <ImageView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youjiantou_btn" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/notifyLl"
+                style="@style/layoutViewStyle"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/deepFont_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="消息免打扰" />
+
+                <ImageView
+                    android:id="@+id/notifyIv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/butongzhi_btn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/delGroupMemberLl"
+                style="@style/layoutViewStyle"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/deepFont_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="踢出成员" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youjiantou_btn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/applyGroupLl"
+                style="@style/layoutViewStyle"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    style="@style/deepFont_15"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="入群请求" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/youjiantou_btn" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/clearChatTv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="清空聊天记录"
+                android:textColor="@color/tagColor"
+                android:textSize="@dimen/dimen_15" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/screen_left"
+                android:layout_marginRight="@dimen/screen_left"
+                android:background="@color/spiteColor" />
+
+            <TextView
+                android:id="@+id/exitGroupTv"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginBottom="30dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="删除并退出"
+                android:textColor="@color/tagColor"
+                android:textSize="@dimen/dimen_15" />
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>

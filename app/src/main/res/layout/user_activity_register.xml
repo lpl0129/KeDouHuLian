@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="注册"
+        android:textColor="@color/deepColor"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        style="@style/layoutViewStyle_Edit"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoujihao_icn" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffb2b2b2" />
+
+        <com.stay.toolslibrary.widget.ClearEditText
+            android:id="@+id/phoneEditText"
+            style="@style/editViewStyle"
+            android:hint="请输入您的手机号"
+            android:inputType="phone"
+            android:maxLength="11" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutViewStyle_Edit"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yanzhengma_icn" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffb2b2b2" />
+
+        <com.stay.toolslibrary.widget.ClearEditText
+            android:id="@+id/signCodeEdit"
+            style="@style/editViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:maxLength="6" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffb2b2b2" />
+
+        <TextView
+            android:id="@+id/getCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="短信验证码"
+            android:textColor="@color/getcode_tv_color"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutViewStyle_Edit"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mima_icn" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffb2b2b2" />
+
+        <com.stay.toolslibrary.widget.ClearEditText
+            android:id="@+id/psdEditText"
+            style="@style/editViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="请输入您的密码"
+            android:inputType="textPassword" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffb2b2b2" />
+
+        <ImageView
+            android:id="@+id/seePsdIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/biyanjing_btn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutViewStyle_Edit"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mima_icn_copy" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffb2b2b2" />
+
+        <com.stay.toolslibrary.widget.ClearEditText
+            android:id="@+id/inviteCodeEdit"
+            style="@style/editViewStyle"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="请输入邀请码"
+            android:inputType="text"
+            android:maxLength="6" />
+
+
+        <TextView
+            style="@style/hintFont_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="选填" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/deal_ll"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+
+        <ImageView
+            android:id="@+id/dealIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/xieyiyixuanze_btn"
+            android:button="@null"
+            android:clickable="false" />
+
+        <TextView
+            style="@style/tintFont_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="已阅读并同意" />
+
+        <TextView
+            android:id="@+id/dealTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《蝌蚪互联用户协议》"
+            android:textColor="#4A8DCC"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/registerTv"
+        style="@style/textViewStyle_Button_Margin"
+        android:layout_marginTop="29dp"
+        android:text="注册" />
+
+    <TextView
+        android:id="@+id/loginTv"
+        style="@style/primaryFont_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="立即登录" />
+
+
+</LinearLayout>

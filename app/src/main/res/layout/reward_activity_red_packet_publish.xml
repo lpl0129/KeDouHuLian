@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/taskTitleLl"
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="广告标题" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskTitleTv"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入标题"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:gravity="center_vertical"
+                        android:text="广告内容" />
+
+                    <EditText
+                        android:id="@+id/taskContentTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@null"
+                        android:gravity="top"
+                        android:hint="请在此处输入广告内容"
+                        android:textColorHint="@color/hintColor" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/deepFont_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="45dp"
+                            android:gravity="center_vertical"
+                            android:text="广告配图  " />
+
+                        <TextView
+                            style="@style/hintFont_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(支持jpg、png、gif、mp4格式)" />
+                    </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/peituIV"
+                        android:layout_width="83dp"
+                        android:layout_height="83dp"
+                        android:src="@drawable/toolslib_upload_image_icon" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加入超链接" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskLinkEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入http或https格式(选填)"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红包总数量" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskAcountEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入正整数"
+                        android:inputType="phone"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="红包总额" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/taskPriceEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="请输入红包广告预算总额"
+                        android:inputType="numberDecimal"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="广告时长" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/timeEt"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="设置领取红包时间，不超过15秒"
+                        android:inputType="phone"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="设置红包口令" />
+
+                    <com.stay.toolslibrary.widget.ClearEditText
+                        android:id="@+id/kouLingTv"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:maxLength="6"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:hint="不超过6个字"
+                        android:inputType="text"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="限制抢红包" />
+
+                    <TextView
+                        android:id="@+id/oneDayOneTimeTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="每人每天可抢1次" />
+
+                    <TextView
+                        android:id="@+id/oneTimeTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="每人只抢1次" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="性别限制" />
+
+                    <TextView
+                        android:id="@+id/sexLimitTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="不限制" />
+
+                    <TextView
+                        android:id="@+id/sexBoyEableTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="男可抢" />
+
+                    <TextView
+                        android:id="@+id/sexGirlEableTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="女可抢" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom">
+
+                        <TextView
+                            style="@style/deepFont_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="年龄段" />
+
+                        <TextView
+                            style="@style/tintFont_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(多选)" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/ageLimt0Tv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:tag="0"
+                        android:text="全部" />
+
+                    <TextView
+                        android:id="@+id/ageLimt1Tv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:tag="1"
+                        android:text="18-25" />
+
+                    <TextView
+                        android:id="@+id/ageLimt2Tv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:tag="2"
+                        android:text="25-45" />
+
+                    <TextView
+                        android:id="@+id/ageLimt3Tv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:tag="3"
+                        android:text="45以上" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="红包模式" />
+
+                    <TextView
+                        android:id="@+id/shouqiRedPacketTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="拼手气红包" />
+
+                    <TextView
+                        android:id="@+id/putongRedPacketTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="普通红包" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/regionLimitLl"
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="区域限制" />
+
+                    <TextView
+                        android:id="@+id/regionLimitTv"
+                        style="@style/tintFont_14"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:hint="投放地区可多选，不选则默认全国"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/youjiantou_btn" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/layoutViewStyle"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        style="@style/deepFont_15"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:text="置顶红包" />
+
+                    <TextView
+                        android:id="@+id/noTopTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="不置顶" />
+
+                    <TextView
+                        android:id="@+id/isTopTv"
+                        style="@style/deepFont_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/radio_bt_bk"
+                        android:drawablePadding="5dp"
+                        android:gravity="center_vertical"
+                        android:text="置顶2.00/次" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(红包" />
+
+                    <TextView
+                        android:id="@+id/taskPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/tagColor" />
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+服务费" />
+
+                    <TextView
+                        android:id="@+id/serverPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/tagColor" />
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+置顶费" />
+
+                    <TextView
+                        android:id="@+id/topPriceTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textColor="@color/tagColor" />
+
+                    <TextView
+                        style="@style/tintFont_13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=")" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/spiteColor" />
+
+        <TextView
+            android:id="@+id/publishTv"
+            style="@style/textViewStyle_Button_Margin"
+            android:layout_gravity="center"
+            android:text="确认发布" />
+
+    </FrameLayout>
+</LinearLayout>

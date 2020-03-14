@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <ImageView
+                android:id="@+id/user_detail_bkg_img"
+                android:layout_width="match_parent"
+                android:layout_height="266.0dip"
+                android:layout_alignParentTop="true"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/chitang_bk"
+                app:layout_collapseMode="parallax" />
+
+            <View
+                android:id="@+id/placeholderView"
+                android:layout_width="match_parent"
+                android:layout_height="266dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/whiteColor"
+                android:fitsSystemWindows="true"
+                android:visibility="gone"
+
+                app:layout_collapseMode="parallax"></View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_marginTop="266dp"
+                android:background="@color/bgColor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:paddingBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp">
+
+                        <TextView
+                            style="@style/white_12"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="已拥有池塘总收益"
+                            android:textColor="#FFAFC0F5" />
+
+                        <TextView
+                            android:id="@+id/tequanTv"
+                            android:drawablePadding="4dp"
+                            android:drawableRight="@drawable/tequan"
+                            style="@style/white_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="塘主特权"
+                            android:textColor="#FFAFC0F5" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/allIncomeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:gravity="center_vertical"
+                        android:text="¥  0"
+                        android:textColor="@color/whiteColor"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:id="@+id/lastDayIncomeTv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:text="昨日：+¥  0"
+                        android:textColor="#FFFFA500"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/whiteColor" />
+
+                <LinearLayout
+                    android:id="@+id/tabLl1"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tabTv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="抢购池塘"
+                            android:textColor="@color/pond_home_tab_white"
+                            android:textSize="13dp" />
+
+                        <View
+                            android:id="@+id/tabSpiteView1"
+                            android:layout_width="40dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@color/whiteColor" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/whiteColor" />
+
+                    <LinearLayout
+                        android:id="@+id/tabLl2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tabTv2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="特价捡漏"
+                            android:textColor="@color/pond_home_tab_white"
+                            android:textSize="13dp" />
+
+                        <View
+                            android:id="@+id/tabSpiteView2"
+                            android:layout_width="40dp"
+                            android:layout_height="1dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@color/whiteColor" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/areaParentLl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/bottomSpiteLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="1px"
+                        android:visibility="gone"
+                        android:background="@color/spiteColor"/>
+
+                    <LinearLayout
+                        android:id="@+id/regionLimitLl"
+                        style="@style/layoutViewStyle"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/white_5_bk">
+
+                        <TextView
+                            style="@style/deepFont_15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="区域筛选" />
+
+                        <TextView
+                            android:id="@+id/regionLimitTv"
+                            style="@style/tintFont_14"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:hint="选择区域"
+                            android:singleLine="true" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/youjiantou_btn" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bgColor"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout
+            android:id="@+id/ptrlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout>
+
+
+    </FrameLayout>
+    <com.qttx.kedouhulian.weight.DragFloatActionButton xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/floatBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="30dp"
+        android:scaleType="center"
+        android:src="@drawable/gongnengwa_btn" />
+</android.support.design.widget.CoordinatorLayout>

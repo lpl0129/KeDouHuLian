@@ -1,0 +1,1 @@
+include ':app', ':basiclib', ':basicmatisse', ':basicres', ':basicucrop', ':IMKit', ':IMLib', ':contactcard'

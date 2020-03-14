@@ -1,0 +1,59 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+def baseproperties = "project"
+def projectProperties = new Properties()
+projectProperties.load(project.rootProject.file("${baseproperties}.properties").newReader('utf-8'))
+def nasmes = projectProperties.getProperty("name").split(',')
+
+ext {
+    resmap = [test: [test: "test"]]
+}
+for (String name : nasmes) {
+    def propertieItem = new Properties()
+    propertieItem.load(project.rootProject.file("${name}.properties").newReader('utf-8'))
+    def runtime = [test: 'test']
+    for (String key : propertieItem.keySet()) {
+        runtime[key] = propertieItem.getProperty(key)
+    }
+    ext.resmap[name] = runtime
+}
+
+buildscript {
+    ext.kotlin_version = '1.3.21'
+    ext.koin_version = '1.0.2'
+    ext.anko_version='0.10.8'
+    repositories {
+        mavenCentral()
+        jcenter()
+        google()
+        maven { url 'https://dl.bintray.com/umsdk/release'}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
+        classpath "org.jetbrains.dokka:dokka-android-gradle-plugin:0.9.18"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        /*maven {
+            url 'http://hyr.liubanglong.cn:8081/repository/android/'
+        }*/
+        jcenter{ url 'http://maven.aliyun.com/nexus/content/groups/public'}
+        google()
+        maven { url "https://jitpack.io" }
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

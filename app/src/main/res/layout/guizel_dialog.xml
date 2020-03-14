@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="525dp"
+        android:background="@drawable/white_10_bk"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/deepFont_17"
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="蝌蚪币的收集攻略"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/webview"
+                    style="@style/deepFont_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="@string/string_guize"
+                    android:textSize="@dimen/dimen_14" />
+
+                <TextView
+                    style="@style/deepFont_17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="54dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="60dp"
+                    android:gravity="center"
+                    android:text="说明"
+                    android:textColor="#E10000"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/deepFont_14"
+                    android:textColor="@color/tagColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:lineSpacingMultiplier="1.5"
+                    android:text="蝌蚪币是针对活跃用户的特别奖励凭证，持有蝌蚪币的用户每天可获得一定的分红奖励，蝌蚪币不能从任何渠道直接购买，只能通过以上5种形式获得"
+                    android:textSize="@dimen/dimen_14" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/tanchaungguanbi_btn" />
+
+</LinearLayout>

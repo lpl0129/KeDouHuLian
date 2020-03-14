@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:skin="http://schemas.android.com/android/skin"
+    android:id="@+id/simpleInputRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <View
+        android:id="@+id/simpleInputBkg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whiteColor"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/whiteColor"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/cancle_tv"
+                style="@style/deepFont_14"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/screen_left"
+                android:gravity="center"
+                android:text="取消" />
+
+
+            <TextView
+                android:id="@+id/sendTv"
+                style="@style/primaryFont_14"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="@dimen/screen_left"
+                android:gravity="center"
+                android:text="发表" />
+
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/simpleInputEditor"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/screen_left"
+            android:layout_marginRight="@dimen/screen_right"
+            android:layout_marginBottom="10dp"
+            android:background="@color/bgColor"
+            android:gravity="top|left"
+            android:hint="请输入回复内容"
+            android:padding="12dp"
+            android:textColor="@color/deepColor"
+            android:textColorHint="@color/hintColor"
+            android:textSize="12sp" />
+
+        <FrameLayout
+            android:id="@+id/simpleInputSelectorContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="270.0dip"
+            android:clickable="true">
+
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

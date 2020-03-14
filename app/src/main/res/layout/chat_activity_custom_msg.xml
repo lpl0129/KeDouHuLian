@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:layout_gravity="bottom"
+        android:background="@color/spiteColor"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_120"
+        android:layout_marginLeft="@dimen/screen_left"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="@dimen/screen_left"
+        android:background="#FFF3F3F3"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/editEt"
+            style="@style/deepFont_14"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top|left"
+            android:hint="请输入您的留言信息"
+            android:maxLength="50"
+            android:textColorHint="@color/hintColor" />
+
+        <TextView
+            android:id="@+id/editTpTv"
+            style="@style/tintFont_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="0／50个字" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/screen_left"
+        android:paddingRight="@dimen/screen_right">
+
+        <TextView
+            style="@style/tintFont_12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="快捷输入" />
+
+        <TextView
+            android:id="@+id/editTv"
+            style="@style/primaryFont_12"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:gravity="right|center_vertical"
+            android:text="编辑" />
+    </LinearLayout>
+
+
+    <com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout
+        android:id="@+id/ptrlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.stay.toolslibrary.library.refresh.PtrClassicFrameLayout>
+</LinearLayout>

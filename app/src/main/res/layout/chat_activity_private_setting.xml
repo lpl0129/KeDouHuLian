@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        android:id="@+id/set_remarks"
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设置好友备注" />
+
+        <TextView
+            android:id="@+id/markTv"
+            style="@style/tintFont_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="堂博彩" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/youjiantou_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/notifyLl"
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="消息免打扰" />
+
+        <ImageView
+            android:id="@+id/notifyIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/butongzhi_btn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/clearHistoryLl"
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清空聊天记录" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/addLL"
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/primaryFont_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加好友" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/delLl"
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="删除好友"
+            android:textColor="#FFFE5555" />
+    </LinearLayout>
+
+</LinearLayout>

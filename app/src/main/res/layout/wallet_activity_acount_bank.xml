@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColor"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_view" />
+
+    <LinearLayout
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名" />
+
+        <com.stay.toolslibrary.widget.ClearEditText
+            android:id="@+id/acountNameEt"
+            style="@style/tintFont_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入您的姓名"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/acountTv"
+            style="@style/deepFont_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="银行卡" />
+
+        <com.stay.toolslibrary.widget.ClearEditText
+            android:id="@+id/acountEt"
+            style="@style/tintFont_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入您的银行卡号"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/layoutViewStyle"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            style="@style/deepFont_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开户行" />
+
+        <com.stay.toolslibrary.widget.ClearEditText
+            android:id="@+id/bankNameEt"
+            style="@style/tintFont_14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="请输入您的开户行名称"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/post_pay"
+        style="@style/white_16"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/primary_15_bk"
+        android:gravity="center"
+        android:text="绑定" />
+</LinearLayout>

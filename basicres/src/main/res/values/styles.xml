@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 白色颜色 -->
+    <style name="white_18">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="white_16">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="white_15">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="white_14">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="white_13">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="white_12">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <!--主色字体-->
+    <style name="primaryFont_18">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="primaryFont_17">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="primaryFont_16">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="primaryFont_15">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="primaryFont_14">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="primaryFont_13">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="primaryFont_12">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="primaryFont_11">
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+    <!--深色字体-->
+
+    <style name="deepFont_18">
+        <item name="android:textColor">@color/deepColor</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="deepFont_17">
+        <item name="android:textColor">@color/deepColor</item>
+        <item name="android:textSize">17dp</item>
+    </style>
+
+    <style name="deepFont_16">
+        <item name="android:textColor">@color/deepColor</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="deepFont_15">
+        <item name="android:textColor">@color/deepColor</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="deepFont_13">
+        <item name="android:textColor">@color/deepColor</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="deepFont_14">
+        <item name="android:textColor">@color/deepColor</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="deepFont_12">
+        <item name="android:textColor">@color/deepColor</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="deepFont_11">
+        <item name="android:textColor">@color/deepColor</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+    <!--浅色色值-->
+
+    <style name="tintFont_16">
+        <item name="android:textColor">@color/tintColor</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="tintFont_14">
+        <item name="android:textColor">@color/tintColor</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="tintFont_13">
+        <item name="android:textColor">@color/tintColor</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="tintFont_12">
+        <item name="android:textColor">@color/tintColor</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <style name="tintFont_11">
+        <item name="android:textColor">@color/tintColor</item>
+        <item name="android:textSize">11dp</item>
+    </style>
+
+    <style name="tintFont_10">
+        <item name="android:textColor">@color/tintColor</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+    <!--提示填充字色值-->
+
+    <style name="tintFontMore_13">
+        <item name="android:textColor">@color/tintMoreColor</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="tintFontMore_12">
+        <item name="android:textColor">@color/tintMoreColor</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+
+    <!--提示填充字色值-->
+    <style name="hintFont_14">
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="hintFont_13">
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="hintFont_12">
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <!--特殊提示字色值-->
+    <style name="layoutViewStyle">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/screen_left</item>
+        <item name="android:paddingRight">@dimen/screen_right</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="layoutViewStyle_Margin" parent="layoutViewStyle">
+        <item name="android:layout_marginLeft">@dimen/screen_left</item>
+        <item name="android:layout_marginRight">@dimen/screen_right</item>
+    </style>
+    <!--整理成可以动态配置-->
+    <style name="layoutViewStyle_EditBk">
+        <item name="android:background">@drawable/edit_15_bk</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+
+    <style name="layoutViewStyle_EditBk_Margin" parent="layoutViewStyle_EditBk">
+        <item name="android:layout_marginLeft">@dimen/screen_left</item>
+        <item name="android:layout_marginRight">@dimen/screen_right</item>
+    </style>
+
+    <style name="editViewStyle">
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">@color/deepColor</item>
+    </style>
+
+    <style name="editViewStyle_hasBk" parent="@style/editViewStyle">
+        <item name="android:background">@drawable/edit_15_bk</item>
+        <item name="android:layout_marginLeft">@dimen/screen_left</item>
+        <item name="android:layout_marginRight">@dimen/screen_right</item>
+    </style>
+
+    <style name="textViewStyle_Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/primary_15_bk</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="textViewStyle_Button_Margin" parent="textViewStyle_Button">
+        <item name="android:layout_marginLeft">@dimen/screen_left</item>
+        <item name="android:layout_marginRight">@dimen/screen_right</item>
+    </style>
+
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14dp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+
+</resources>
